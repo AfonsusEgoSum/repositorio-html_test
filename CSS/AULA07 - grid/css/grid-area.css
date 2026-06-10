@@ -1,0 +1,64 @@
+header{
+    width: 100vw;
+    height: 40px;
+    text-align: right;
+    border: 1px solid black;
+}
+header > i {
+    font-size: 30px;
+    margin-top: 5px;
+}
+main{ 
+    box-sizing: border-box;
+    margin: 25px;
+    display: grid;
+    grid-template-rows: 10vh 70vh 50vh 5vh 50vh;
+    grid-template-columns: 48vw 48vw;
+    gap: 10px;
+    grid-template-areas: "um um"
+                        "dois dois"
+                        "tres cinco"
+                        "quatro seis"
+                        "sete nove"
+                        "oito dez";
+}
+#inicio{
+    background-color:blue;
+    grid-area: um;
+}
+#figura-principal{
+    background-color: chocolate;
+    grid-area: dois;
+}
+#um{
+    background-color: crimson;
+    grid-area: tres;
+}
+#legenda-um{
+    background-color: chartreuse;
+    grid-area: quatro;
+}
+#dois{
+    background-color: crimson;
+    grid-area: cinco;
+}
+#legenda-dois{
+    background-color: chartreuse;
+    grid-area: seis;
+}
+#tres{
+    background-color: crimson;
+    grid-area: sete;
+}
+#legenda-tres{
+    background-color: chartreuse;
+    grid-area: oito;
+}
+#quatro{
+    background-color: crimson;
+    grid-area: nove;
+}
+#legenda-quatro{
+    background-color: chartreuse;
+    grid-area: dez;
+}
